@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        body {
+            background-color: rgb(3, 99, 209); /* Muda a cor do fundo */
+            color: rgb(255, 255, 255);           /* Muda a cor do texto */
+            font-family: Arial, sans-serif; /* Adiciona uma fonte  */
+        }
+        nav ul {
+            list-style-type: none; /* Retira os marcadores da lista */
+            padding: 0;           /* Retira o espaçamento interno */
+            margin: 0;            /* Remove margens  */
+            text-align: center;   /* Centraliza os itens */
+            background-color: #333; /* Fundo do menu */
+            padding: 10px 0;      /* Espaçamento no menu */
+        }
+        nav ul li {
+            display: inline;      /* Mostra os itens da lista */
+            margin: 0 15px;       /* Espaçamento horizontal entre os links */
+        }
+        nav ul li a {
+            color: rgb(243, 227, 238);         /* Muda a cor dos links */
+            text-decoration: none; /* Retira o sublinhado dos links */
+            font-size: 1.2em;      /* Muda o tamanho da fonte */
+        }
+        nav ul li a:hover {
+            text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */ 
+        } 
+        .container {
+            max-width: 800px;
+            margin: 65px auto; /* Centraliza o formulário na página */
+            background-color: #353131; /* Fundo do formulário */
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .container h1, .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 11px 0 7px;
+            font-size: 1.1em;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 11px;
+            margin-bottom: 17px;
+            border: none;
+            border-radius: 6px;
+            font-size: 2em;
+        }
+        input, textarea {
+            background-color: #fae3e3;
+            color: rgb(216, 202, 202);
+        }
+        textarea {
+            resize: none; /* Retira a possibilidade de redimensionar */
+            height: 40px; /* Muda a altura para se igualar às outras caixas */
+        }
+        button {
+            background-color: #0c4619;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #044111;
+        }
+</style>
+</head>
+<body>
+<!-- navegação -->
+<nav>
+    <ul>
+        <li><a href="index.html"></a></li>
+        <li><a href="sobre.html">Sobre mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portifolio.html">Portfólio</a></li>
+        <li><a href="contato.html"></a></li>
+    </ul>
+   <!-- 
+    Aluno: Gabriel Correa da Silva
+    RU: 4709634
+    -->
+<h1><center>FALE COMIGO</center></h1>
+<div class="container">
+    <form action="#" method="post">
+        <!-- Campo Nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br>
+        
+        <!-- Campo E-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br>
+        
+        <!-- Campo Mensagem -->
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea><br>
+        
+        <!-- Botão Enviar -->
+        <button type="submit">Enviar</button>
+    </form>
+</nav>
+</body>
+</html>
